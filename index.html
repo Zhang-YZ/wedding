@@ -9,15 +9,15 @@
 </head>
 <body>
   <header class="nav">
-    <a class="monogram" href="#top">Z <i>&</i> D</a>
-    <nav><a href="#story">我们的故事</a><a href="#gallery">照片</a><a href="#day">这一天</a></nav>
+    <a class="monogram" href="#top">Z <span>&</span> D</a>
+    <nav><a href="#story">我们的故事</a><a href="#journey">一路有你</a><a href="#day">这一天</a></nav>
   </header>
 
   <main>
     <section class="hero" id="top">
-      <img src="photos/hero.jpg" alt="张宇哲与戴子茜的婚纱照">
-      <div class="shade"></div>
-      <div class="hero-copy">
+      <img src="photos/photo-02.jpg" alt="张宇哲与戴子茜在绿荫下相伴">
+      <div class="heroShade"></div>
+      <div class="heroCopy">
         <p class="eyebrow">OUR WEDDING · 2026.09.26</p>
         <h1>今日宜欢喜<br><em>余生皆是你</em></h1>
         <p class="names">张宇哲 <span>♡</span> 戴子茜</p>
@@ -26,41 +26,86 @@
     </section>
 
     <section class="story section" id="story">
-      <div class="number">01</div>
-      <div><p class="eyebrow dark">HOW IT BEGAN</p><h2>我们，把平凡的日子<br>写成了诗。</h2></div>
-      <div class="story-copy">
-        <p>从第一次见面的怦然心动，到决定携手走过余生。那些一起看过的日落、走过的街巷，都成了今天最温柔的注脚。</p>
-        <p>这一天，我们邀请最爱的人来到身边，见证一句简单却郑重的“我愿意”。</p>
-        <span class="signature">Yuzhe & Ziqian</span>
+      <div class="sectionNo">01</div>
+      <div class="storyWords">
+        <p class="eyebrow dark">HOW IT BEGAN</p>
+        <h2>我们，把平凡的日子<br>写成了诗。</h2>
+        <div class="storyText">
+          <p>从第一次见面的怦然心动，到决定携手走过余生。那些一起看过的日落、走过的街巷，都成了今天最温柔的注脚。</p>
+          <p>这一天，我们邀请最爱的人来到身边，见证一句简单却郑重的“我愿意”。</p>
+          <span class="signature">Yuzhe & Ziqian</span>
+        </div>
       </div>
+      <button class="imageButton storyPortrait" data-full="photos/photo-01.jpg"><img src="photos/photo-01.jpg" alt="张宇哲与戴子茜在红墙前牵手" loading="lazy"><span>VIEW</span></button>
     </section>
 
-    <section class="gallery section" id="gallery">
-      <div class="gallery-head"><div><p class="eyebrow dark">MEMORIES IN FRAMES</p><h2>爱的剪影</h2></div><p>每一帧，都是我们想珍藏一生的瞬间。</p></div>
-      <div class="grid">
-        <button class="photo" data-full="photos/photo-01.jpg"><img src="photos/photo-01.jpg" alt="张宇哲与戴子茜在红墙前牵手"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-02.jpg"><img src="photos/photo-02.jpg" alt="张宇哲与戴子茜在绿荫下相伴" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-03.jpg"><img src="photos/photo-03.jpg" alt="张宇哲与戴子茜在湖畔留影" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-04.jpg"><img src="photos/photo-04.jpg" alt="张宇哲与戴子茜在北海湖畔" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-05.jpg"><img src="photos/photo-05.jpg" alt="张宇哲与戴子茜依偎在宫墙旁" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-06.jpg"><img src="photos/photo-06.jpg" alt="张宇哲与戴子茜在花树下牵手" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-07.jpg"><img src="photos/photo-07.jpg" alt="张宇哲与戴子茜在花园里牵手" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-08.jpg"><img src="photos/photo-08.jpg" alt="张宇哲与戴子茜在旋转木马前相视" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-09.jpg"><img src="photos/photo-09.jpg" alt="张宇哲与戴子茜在旋转木马旁合影" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-10.jpg"><img src="photos/photo-10.jpg" alt="张宇哲与戴子茜的俏皮合影" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-11.jpg"><img src="photos/photo-11.jpg" alt="张宇哲与戴子茜的礼服合影" loading="lazy"><span>VIEW</span></button>
-        <button class="photo" data-full="photos/photo-12.jpg"><img src="photos/photo-12.jpg" alt="戴子茜从张宇哲身后拥抱他" loading="lazy"><span>VIEW</span></button>
-      </div>
+    <section class="journey" id="journey">
+      <article class="moment lakeMoment">
+        <div class="layeredPhotos lakePhotos">
+          <button class="imageButton layerMain" data-full="photos/photo-03.jpg"><img src="photos/photo-03.jpg" alt="张宇哲与戴子茜在湖畔留影" loading="lazy"><span>VIEW</span></button>
+          <button class="imageButton layerSmall" data-full="photos/photo-04.jpg"><img src="photos/photo-04.jpg" alt="张宇哲与戴子茜在北海湖畔" loading="lazy"><span>VIEW</span></button>
+        </div>
+        <div class="momentCopy">
+          <p class="eyebrow dark">SIDE BY SIDE</p>
+          <h2>一起走过的风景，<br>才有了名字。</h2>
+          <p>湖边的风、树下的光，还有每一次并肩而行，都因为身旁是你，变成了值得珍藏的记忆。</p>
+        </div>
+      </article>
+
+      <article class="moment warmMoment">
+        <div class="momentCopy">
+          <p class="eyebrow dark">IN EVERY SEASON</p>
+          <h2>从心动，<br>走到心安。</h2>
+          <p>爱不是只有盛大的时刻，也是寻常日子里的相视一笑，是走累了依然愿意牵紧彼此的手。</p>
+        </div>
+        <div class="layeredPhotos warmPhotos">
+          <button class="imageButton layerMain" data-full="photos/photo-05.jpg"><img src="photos/photo-05.jpg" alt="张宇哲与戴子茜依偎在宫墙旁" loading="lazy"><span>VIEW</span></button>
+          <button class="imageButton layerSmall" data-full="photos/photo-06.jpg"><img src="photos/photo-06.jpg" alt="张宇哲与戴子茜在花树下牵手" loading="lazy"><span>VIEW</span></button>
+        </div>
+      </article>
+
+      <article class="gardenMoment">
+        <button class="imageButton gardenPhoto" data-full="photos/photo-07.jpg"><img src="photos/photo-07.jpg" alt="张宇哲与戴子茜在花园里牵手" loading="lazy"><span>VIEW</span></button>
+        <div class="gardenQuote">
+          <p class="eyebrow">A LITTLE PROMISE</p>
+          <blockquote>“往后的每一个季节，<br>都想和你一起看。”</blockquote>
+        </div>
+      </article>
+
+      <article class="moment playMoment">
+        <div class="layeredPhotos playPhotos">
+          <button class="imageButton layerMain" data-full="photos/photo-08.jpg"><img src="photos/photo-08.jpg" alt="张宇哲与戴子茜在旋转木马前相视" loading="lazy"><span>VIEW</span></button>
+          <button class="imageButton layerSmall" data-full="photos/photo-10.jpg"><img src="photos/photo-10.jpg" alt="张宇哲与戴子茜的俏皮合影" loading="lazy"><span>VIEW</span></button>
+        </div>
+        <div class="momentCopy">
+          <p class="eyebrow dark">OUR KIND OF JOY</p>
+          <h2>爱，也可以是<br>孩子气的快乐。</h2>
+          <p>在彼此面前不必拘谨，笑得毫无保留。我们喜欢这样的自己，也喜欢这样在一起的每一天。</p>
+        </div>
+      </article>
+
+      <article class="quietMoment section">
+        <div class="quietCopy">
+          <p class="eyebrow dark">JUST THE TWO OF US</p>
+          <h2>认真相爱，<br>也尽情可爱。</h2>
+          <p>所有镜头之外的温柔，最后都落进同一个答案：余生，请多指教。</p>
+        </div>
+        <button class="imageButton quietMain" data-full="photos/photo-09.jpg"><img src="photos/photo-09.jpg" alt="张宇哲与戴子茜在旋转木马旁合影" loading="lazy"><span>VIEW</span></button>
+        <button class="imageButton quietSmall" data-full="photos/photo-12.jpg"><img src="photos/photo-12.jpg" alt="戴子茜从张宇哲身后拥抱他" loading="lazy"><span>VIEW</span></button>
+      </article>
     </section>
 
-    <section class="day" id="day"><div class="day-card">
-      <p class="eyebrow">THE DAY WE SAY YES</p><h2>九月二十六日</h2>
-      <div class="date"><span>星期六</span><strong>26</strong><span>二〇二六</span></div><div class="rule"></div>
-      <p>山东省郓城县 · 七星华誉大酒店</p><p class="time">天空之城厅</p>
-    </div></section>
+    <section class="day" id="day">
+      <div class="dayCard">
+        <p class="eyebrow">THE DAY WE SAY YES</p><h2>九月二十六日</h2>
+        <div class="date"><span>星期六</span><strong>26</strong><span>二〇二六</span></div>
+        <div class="rule"></div>
+        <p>山东省郓城县 · 七星华誉大酒店</p><p class="time">天空之城厅</p>
+      </div>
+    </section>
   </main>
 
-  <footer><p class="monogram">Z <i>&</i> D</p><p>谢谢你，成为我们故事的一部分。</p><small>MADE WITH LOVE · 2026</small></footer>
+  <footer><p class="monogram">Z <span>&</span> D</p><p>谢谢你，成为我们故事的一部分。</p><small>MADE WITH LOVE · 2026</small></footer>
   <dialog id="lightbox"><button aria-label="关闭">×</button><img alt="照片预览"></dialog>
   <script src="script.js"></script>
 </body>
