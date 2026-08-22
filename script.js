@@ -1,7 +1,7 @@
 const dialog = document.querySelector("#lightbox");
 const preview = dialog.querySelector("img");
 
-document.querySelectorAll(".photo").forEach((photo) => {
+document.querySelectorAll(".imageButton").forEach((photo) => {
   photo.addEventListener("click", () => {
     preview.src = photo.dataset.full;
     preview.alt = photo.querySelector("img").alt;
