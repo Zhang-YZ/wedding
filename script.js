@@ -17,6 +17,21 @@ dialog.addEventListener("click", (event) => {
 const music = document.querySelector("#backgroundMusic");
 const musicToggle = document.querySelector("#musicToggle");
 music.volume = 0.55;
+let musicFadeTimer;
+
+const stopMusicFade = () => {
+  window.clearInterval(musicFadeTimer);
+  musicFadeTimer = undefined;
+};
+
+const fadeMusicIn = () => {
+  stopMusicFade();
+  music.volume = 0;
+  musicFadeTimer = window.setInterval(() => {
+    music.volume = Math.min(0.55, music.volume + 0.055);
+    if (music.volume >= 0.55) stopMusicFade();
+  }, 100);
+};
 
 const syncMusicButton = () => {
   const playing = !music.paused;
@@ -26,7 +41,11 @@ const syncMusicButton = () => {
 };
 
 music.addEventListener("play", syncMusicButton);
-music.addEventListener("pause", syncMusicButton);
+music.addEventListener("playing", fadeMusicIn);
+music.addEventListener("pause", () => {
+  stopMusicFade();
+  syncMusicButton();
+});
 musicToggle.addEventListener("click", () => {
   if (music.paused) music.play().catch(() => {});
   else music.pause();
